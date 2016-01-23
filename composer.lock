@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "75157a054342a5a13c0a1bc0daf1da32",
-    "content-hash": "eddb1e0925bc2e03582297a722209413",
+    "hash": "e39d124a8ca2232e8981bf895bbb61ad",
+    "content-hash": "3bb6547eb9402b03001740d149c73a25",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -719,18 +719,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/propelorm/PropelBundle.git",
-                "reference": "24c51049e426e25918a6d09034d18f21b8de9b89"
+                "reference": "dbbc9e5c92e1c45c4811748e4dc4986f39b8a622"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/propelorm/PropelBundle/zipball/24c51049e426e25918a6d09034d18f21b8de9b89",
-                "reference": "24c51049e426e25918a6d09034d18f21b8de9b89",
+                "url": "https://api.github.com/repos/propelorm/PropelBundle/zipball/dbbc9e5c92e1c45c4811748e4dc4986f39b8a622",
+                "reference": "dbbc9e5c92e1c45c4811748e4dc4986f39b8a622",
                 "shasum": ""
             },
             "require": {
                 "propel/propel1": "^1.6.8",
-                "symfony/framework-bundle": "^2.8.2",
-                "symfony/propel1-bridge": "2.7.x-dev"
+                "symfony/framework-bundle": "^2.8.2"
+            },
+            "conflict": {
+                "symfony/propel1-bridge": ">=2.8.0"
+            },
+            "replace": {
+                "symfony/propel1-bridge": "<=2.8.0"
             },
             "require-dev": {
                 "fzaninotto/faker": "^1.5",
@@ -739,12 +744,12 @@
                 "symfony/symfony": "^2.8.2"
             },
             "suggest": {
-                "symfony/security-acl": "For using the Propel ACL implementation"
+                "propel/propel-acl-bundle": "For using the Propel ACL implementation"
             },
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
-                    "Propel\\PropelBundle\\": ""
+                    "Propel\\Bundle\\PropelBundle\\": ""
                 },
                 "exclude-from-classmap": [
                     "Tests/"
@@ -766,7 +771,7 @@
                 "persistence",
                 "propel"
             ],
-            "time": "2016-01-23 11:29:37"
+            "time": "2016-01-23 22:49:08"
         },
         {
             "name": "propel/propel1",
@@ -1528,61 +1533,6 @@
             "time": "2015-11-04 20:28:58"
         },
         {
-            "name": "symfony/propel1-bridge",
-            "version": "2.7.x-dev",
-            "target-dir": "Symfony/Bridge/Propel1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/propel1-bridge.git",
-                "reference": "7b29bafad063c39e8518367fab625406398f5004"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/propel1-bridge/zipball/7b29bafad063c39e8518367fab625406398f5004",
-                "reference": "7b29bafad063c39e8518367fab625406398f5004",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.9",
-                "propel/propel1": "~1.6,>=1.6.5",
-                "symfony/form": "~2.7|~3.0.0",
-                "symfony/http-foundation": "~2.0,>=2.0.5|~3.0.0",
-                "symfony/http-kernel": "~2.0,>=2.0.5|~3.0.0",
-                "symfony/property-access": "~2.3|~3.0.0"
-            },
-            "require-dev": {
-                "symfony/stopwatch": "~2.2|~3.0.0"
-            },
-            "type": "symfony-bridge",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Bridge\\Propel1\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Symfony Propel1 Bridge",
-            "homepage": "http://symfony.com",
-            "time": "2015-02-05 06:58:17"
-        },
-        {
             "name": "symfony/security-acl",
             "version": "v2.8.0",
             "source": {
@@ -2007,8 +1957,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "propel/propel-bundle": 20,
-        "symfony/propel1-bridge": 20
+        "propel/propel-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
