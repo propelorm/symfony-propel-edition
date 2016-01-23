@@ -16,7 +16,7 @@ The Symfony Standard Edition is configured with the following defaults:
 
   * Twig as the only configured template engine;
 
-  * Doctrine ORM/DBAL;
+  * Propel ORM;
 
   * Swiftmailer;
 
@@ -29,7 +29,7 @@ It comes pre-configured with the following bundles:
   * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
     template and routing annotation capability
 
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
+  * [**PropelBundle**][7] - Adds support for the Propel ORM
 
   * [**TwigBundle**][8] - Adds support for the Twig templating engine
 
@@ -60,7 +60,7 @@ Enjoy!
 
 [1]:  https://symfony.com/doc/2.8/book/installation.html
 [6]:  https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  https://symfony.com/doc/2.8/book/doctrine.html
+[7]:  https://symfony.com/doc/2.8/book/propel.html
 [8]:  https://symfony.com/doc/2.8/book/templating.html
 [9]:  https://symfony.com/doc/2.8/book/security.html
 [10]: https://symfony.com/doc/2.8/cookbook/email.html

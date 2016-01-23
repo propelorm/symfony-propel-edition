@@ -21,7 +21,7 @@ monolog:
         console:
             type:   console
             bubble: false
-            channels: [!event, !doctrine]
+            channels: [!event, !propel]
         # uncomment to get logging in your browser
         # you may have to allow bigger header sizes in your Web server configuration
         #firephp:
