@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e39d124a8ca2232e8981bf895bbb61ad",
-    "content-hash": "3bb6547eb9402b03001740d149c73a25",
+    "hash": "55e9b83e9a7446e3ea9226156821d872",
+    "content-hash": "f789ad0238a5701dc02e49d9e55ce4a9",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -714,6 +714,58 @@
             "time": "2015-12-04 09:45:44"
         },
         {
+            "name": "propel/propel-acl-bundle",
+            "version": "1.5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/propelorm/PropelAclBundle.git",
+                "reference": "f579f5a4c66678937a92639e375df85ea9faa6c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/propelorm/PropelAclBundle/zipball/f579f5a4c66678937a92639e375df85ea9faa6c1",
+                "reference": "f579f5a4c66678937a92639e375df85ea9faa6c1",
+                "shasum": ""
+            },
+            "require": {
+                "propel/propel-bundle": "1.5.x@dev",
+                "symfony/security-acl": "@stable"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.21|^5.0.10",
+                "symfony/symfony": "^2.8.2"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Propel\\Bundle\\PropelAclBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Toni Uebernickel",
+                    "email": "tuebernickel@gmail.com"
+                }
+            ],
+            "description": "Propel integration of the Symfony Security ACL component.",
+            "keywords": [
+                "acl",
+                "orm",
+                "persistence",
+                "propel",
+                "security",
+                "symfony"
+            ],
+            "time": "2016-01-28 16:16:51"
+        },
+        {
             "name": "propel/propel-bundle",
             "version": "1.5.x-dev",
             "source": {
@@ -723,7 +775,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/propelorm/PropelBundle/zipball/dbbc9e5c92e1c45c4811748e4dc4986f39b8a622",
+                "url": "https://api.github.com/repos/propelorm/PropelBundle/zipball/bb85f7500832ade0df632b113710fb649348b4ee",
                 "reference": "dbbc9e5c92e1c45c4811748e4dc4986f39b8a622",
                 "shasum": ""
             },
@@ -1957,7 +2009,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "propel/propel-bundle": 20
+        "propel/propel-bundle": 20,
+        "propel/propel-acl-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

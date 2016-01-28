@@ -1,6 +1,8 @@
 # To get started with security, check out the documentation:
 # http://symfony.com/doc/current/book/security.html
 security:
+    acl:
+        provider: propel.security.acl.provider
 
     # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
     providers:
